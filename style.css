@@ -1,0 +1,201 @@
+.gradient-background {
+  background: linear-gradient(300deg, #7ea88d, #71af95, #45823beb);
+  background-size: 180% 180%;
+  animation: gradient-animation 9s ease infinite;
+}
+
+#search-btn{
+  background-color: rgb(99, 137, 99); /* צבע ירוק */
+  color: white; /* צבע הטקסט */
+}
+#search-btn:hover {
+  background-color: rgb(69, 101, 69); /* צבע ירוק כהה יותר בהובר */
+}
+
+#h1_hommies{
+  font-size: 60px;
+  letter-spacing: 1px;
+  margin: 50px auto;
+}
+
+
+.img-container1 img {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+
+#button_apartment_owner {
+  background-color: rgb(99, 137, 99); /* צבע ירוק */
+  color: white; /* צבע הטקסט */
+  border: none; 
+}
+
+#button_apartment_owner:hover {
+  background-color: rgb(69, 101, 69); /* צבע ירוק כהה יותר בהובר */
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+#iphonePic{
+  border-radius: 10%;
+  height: 450px;
+  width: 250px;
+}
+
+.bi-house-check ,.bi-alarm, .bi-award{
+  height: 150px;
+  width: 150px;
+  padding-right: 7px;
+}
+
+.lead{
+  font-size:x-large;
+}
+
+.text-body-emphasis{
+  font-size:XX-large;
+}
+
+
+#whoRwe{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  height: 100vh;
+  padding: 100px;
+}
+
+
+
+@media (max-width:991px){
+  #whoRwe{
+  margin-top:300px;
+  margin-bottom: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+}
+
+
+.rounded-circle{
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+.whoRwe_P{
+  text-align: center;
+}
+
+
+
+
+
+
+#chat-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #45823beb;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.chat-input button {
+  background-color: #71af95;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chat-input button:hover {
+  background-color: #7ea88d;
+}
+
+
+.close-chat-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-chat-btn:hover {
+  color: #ff0000; /* צבע אדום בהובר */
+}
+
