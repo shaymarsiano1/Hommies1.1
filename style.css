@@ -1,8 +1,24 @@
 .gradient-background {
+  width: 100%;
+  height: 100vh; 
   background: linear-gradient(300deg, #3e7048, #cadfcb, #215f21);
   background-size: 180% 180%;
   animation: gradient-animation 9s ease infinite;
 }
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 
 #search-btn{
   background-color: rgb(99, 137, 99); /* צבע ירוק */
