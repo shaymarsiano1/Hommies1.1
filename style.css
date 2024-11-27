@@ -35,6 +35,38 @@
 }
 
 
+
+/* Positioning the roof container */
+.roof-container {
+  position: relative;
+  width: fit-content; /* Ensures the roof container adjusts to the size of the heading */
+  margin: 0; /* Centers the roof relative to the page */
+  display: flex;
+  justify-content: space-between; /* Ensures left and right lines touch at the top */
+  margin-bottom: -10px; /* Adjust to bring roof closer to heading */
+}
+
+/* Left roof line */
+.roof-left {
+  width: 60px; /* Length of the line; adjust dynamically if needed */
+  height: 2px; /* Thickness of the line */
+  background: linear-gradient(to left, black 40%, transparent);  
+  transform: rotate(-25deg); /* Angle to form left side of the roof */
+  transform-origin: top right; /* Ensures pivot starts from the correct corner */
+}
+
+/* Right roof line */
+.roof-right {
+  width: 60px; /* Length of the line; adjust dynamically if needed */
+  height: 2px; /* Thickness of the line */
+  background: linear-gradient(to right, black 40%, transparent); 
+  transform: rotate(25deg); /* Angle to form right side of the roof */
+  transform-origin: top left; /* Ensures pivot starts from the correct corner */
+}
+
+
+
+
 .img-container1 img {
   max-width: 80%;
   border-radius: 10px;
@@ -46,6 +78,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  
 }
 
 
