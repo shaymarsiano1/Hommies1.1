@@ -1,7 +1,7 @@
 .gradient-background {
   width: 100%;
   height: 100%; 
-  background: linear-gradient(300deg, #3e7048, #cadfcb, #215f21);
+  background: linear-gradient(300deg, #85A98F, #D3F1DF, #5A6C57);
   background-size: 180% 180%;
   animation: gradient-animation 9s ease infinite;
 }
@@ -28,11 +28,11 @@
 
 
 #search-btn{
-  background-color: rgb(99, 137, 99); /* צבע ירוק */
-  color: white; /* צבע הטקסט */
+  background-color:#85A98F; 
+  color: white; 
 }
 #search-btn:hover {
-  background-color: rgb(69, 101, 69); /* צבע ירוק כהה יותר בהובר */
+  background-color:#5A6C57; /* צבע ירוק כהה יותר בהובר */
 }
 
 #h1_hommies{
@@ -46,7 +46,7 @@
 /* Positioning the roof container */
 .roof-container {
   position: relative;
-  width: fit-content; /* Ensures the roof container adjusts to the size of the heading */
+  width: fit-content; 
   margin: 0; /* Centers the roof relative to the page */
   display: flex;
   justify-content: space-between; /* Ensures left and right lines touch at the top */
@@ -88,14 +88,14 @@
 
 
 
-#button_apartment_owner {
-  background-color: rgb(99, 137, 99); /* צבע ירוק */
-  color: white; /* צבע הטקסט */
+#button-sign-in {
+  background-color: #85A98F; 
+  color: white; 
   border: none; 
 }
 
-#button_apartment_owner:hover {
-  background-color: rgb(69, 101, 69); /* צבע ירוק כהה יותר בהובר */
+#button-sign-in:hover {
+  background-color: #5A6C57; /* צבע ירוק כהה יותר בהובר */
 }
 
 
@@ -248,3 +248,183 @@
   color: #ff0000; /* צבע אדום בהובר */
 }
 
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+
+.register-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+	
+}
+
+.register-screen {		
+	background: linear-gradient(90deg,  #85A98F, #cadfcb);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #5A6C57;
+  border:solid 10px #D3F1DF;
+  border-radius: 25px;	
+}
+
+.register-screen-content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+.register-screen-background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.register-screen-background-shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.register-screen-background-shape1 {
+	height: 520px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.register-screen-background-shape2 {
+	height: 220px;
+	width: 220px;
+	background: #85A98F;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.register-screen-background-shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #85A98F, #85A98F);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.register-screen-background-shape4 {
+	height: 400px;
+	width: 200px;
+	background: #85A98F;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #5A6C57;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #5A6C57;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #525B44;
+	box-shadow: 0px 2px 2px #5A6C57;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #5A6C57;
+	outline: none;
+}
+
+.register-button-icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #85A98F;
+}
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #85A98F;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
