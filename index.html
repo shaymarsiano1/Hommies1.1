@@ -246,13 +246,13 @@
       <img src="./gal.png" class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
       <h2 class="fw-normal">Gal Boulkind Olpiner</h2>
       <p> <span style="font-weight: bold;">CEO</span>, Gal is a third-year Economics and Entrepreneurship student at Reichman University, combining academic knowledge with innovation to lead the company forward.</p>
-      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      <p><a class="btn btn-secondary" href="#">Linkedin Profile</a></p>
     </div>
     <div class="col-lg-4 col-md-12">
       <img src="./gakG.png" class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
       <h2 style="margin-bottom:47px;" class="fw-normal">Gal Gadusher</h2>
       <p><span style="font-weight: bold;">CNO COO</span>, Gal is a third-year student of Economic Entrepreneurship at Reichman University, driving the company’s operational excellence and strategic growth.</p>
-      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/gadusher?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Linkedin Profile</a></p>
     </div>
     <div class="col-lg-4 col-md-12">
       <img src="./shay.png" class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
@@ -278,18 +278,19 @@
 			<form class="login">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="User name / Email">
+					<input type="text" id="username" class="login__input" placeholder="User name / Email">
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password">
+					<input type="password" id="password" class="login__input" placeholder="Password">
 				</div>
 
 
-        <a class="button login__submit" href="#appPart">
+        <a class="button login__submit" id="loginLink" href="#">
           <span class="register-button-text">Log In Now</span>
           <i class="register-button-icon fas fa-chevron-right"></i>
       </a>
+      
       
 
 
@@ -391,8 +392,24 @@
 
 
 
-
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('loginLink').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent default link behavior
+  
+          // Clear input fields
+          document.getElementById('username').value = '';
+          document.getElementById('password').value = '';
+  
+          // Scroll smoothly to #appPart
+          const target = document.getElementById('appPart');
+          if (target) {
+              target.scrollIntoView({ behavior: 'smooth' });
+          }
+      });
+  });
+</script>
+  
 
 
 
