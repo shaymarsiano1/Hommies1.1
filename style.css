@@ -114,7 +114,7 @@
 .icon-square {
   width: 3rem;
   height: 3rem;
-  border-radius: 0.75rem;
+  border-radius: 50%;
 }
 
 .profile-img {
@@ -123,15 +123,15 @@
 }
 
 #iphonePic{
-  border-radius: 10%;
-  height: 450px;
-  width: 250px;
+  border-radius: 11%;
+  height: 455px;
+  width: 220px;
 }
 
 .bi-house-check ,.bi-alarm, .bi-award{
-  height: 150px;
-  width: 150px;
-  padding-right: 7px;
+  height: 80px;
+  width: 80px;
+  padding-right: 9px;
 }
 
 .lead{
@@ -188,7 +188,7 @@
 }
 
 .chat-header {
-  background-color: #45823beb;
+  background-color: #85A98F;
   color: white;
   padding: 10px;
   font-size: 16px;
@@ -219,7 +219,7 @@
 }
 
 .chat-input button {
-  background-color: #71af95;
+  background-color: #5A6C57;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -228,7 +228,7 @@
 }
 
 .chat-input button:hover {
-  background-color: #7ea88d;
+  background-color: #85A98F;
 }
 
 
@@ -271,11 +271,10 @@
 .register-screen {		
 	background: linear-gradient(90deg,  #85A98F, #cadfcb);		
 	position: relative;	
-	height: 600px;
-	width: 360px;	
+	height: 620px;
+	width: 350px;	
 	box-shadow: 0px 0px 24px #5A6C57;
   border:solid 10px #D3F1DF;
-  border-radius: 25px;	
 }
 
 .register-screen-content {
@@ -293,11 +292,13 @@
 	z-index: 0;
 	-webkit-clip-path: inset(0 0 0 0);
 	clip-path: inset(0 0 0 0);	
+
 }
 
 .register-screen-background-shape {
 	transform: rotate(45deg);
 	position: absolute;
+
 }
 
 .register-screen-background-shape1 {
