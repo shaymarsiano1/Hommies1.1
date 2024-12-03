@@ -335,12 +335,6 @@
 
 
 
-
-
-
-
-
-
 <script>
   // פונקציה להציג או להסתיר את הצ'אט
   function toggleChat() {
@@ -377,7 +371,16 @@
           chatMessages.scrollTop = chatMessages.scrollHeight;
       }
   }
+
+  // הוספת מאזין לאירוע לחיצה על מקש Enter
+  document.getElementById('chat-input').addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+          event.preventDefault(); // מונע מעבר לשורה חדשה בשדה הטקסט
+          sendMessage();
+      }
+  });
 </script>
+
 
 
 <script>
@@ -411,7 +414,12 @@
 </script>
   
 
+<script>
 
+
+
+
+</script>
 
 
 
