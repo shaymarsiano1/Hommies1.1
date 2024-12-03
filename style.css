@@ -35,7 +35,7 @@
   background-color:#5A6C57; /* צבע ירוק כהה יותר בהובר */
 }
 
-#h1_hommies{
+#h1_Homies{
   font-size: 60px;
   letter-spacing: 1px;
   margin: 50px auto;
@@ -225,7 +225,9 @@
   padding: 10px 20px;
   cursor: pointer;
   font-size: 14px;
+  
 }
+
 
 .chat-input button:hover {
   background-color: #85A98F;
@@ -247,6 +249,7 @@
 .close-chat-btn:hover {
   color: #ff0000; /* צבע אדום בהובר */
 }
+
 
 
 
